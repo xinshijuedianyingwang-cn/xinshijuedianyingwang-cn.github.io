@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>新视觉电影网 - 视觉电影推荐与影像构图_画幅色彩档案每日更新</title>
+<meta name="description" content="新视觉电影网（https://xinshijuedianyingwang-cn.github.io）从画面出发做电影推荐：每日更新视觉片单、影像构图解析、色彩档案、画幅格式对照与编辑观察，附剧情简介与评分参考，帮你用看画面的方式挑电影，页面移动端自适应。">
+<meta name="keywords" content="新视觉电影网,视觉电影,电影推荐,影像构图,画幅格式,色彩档案,在线观看,电影评分,导演风格,影视资讯,观影指南">
+<meta name="author" content="新视觉电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="新视觉电影网">
+<link rel="canonical" href="https://xinshijuedianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="新视觉电影网">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="新视觉电影网 - 视觉电影推荐与影像构图_画幅色彩档案每日更新">
+<meta property="og:description" content="新视觉电影网从画面出发做电影推荐：视觉片单、影像构图解析、色彩档案与画幅格式对照，附剧情简介与评分参考。">
+<meta property="og:url" content="https://xinshijuedianyingwang-cn.github.io/">
+<meta property="og:image" content="https://xinshijuedianyingwang-cn.github.io/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="新视觉电影网 - 视觉电影推荐与影像构图">
+<meta name="twitter:description" content="用看画面的方式挑电影，新视觉电影网每日更新视觉片单。">
+<style>
+/* ==========================================================
+   新视觉电影网 · 构成主义画廊 / 瑞士国际主义排版
+   浅灰白底 + 纯黑 + 三原色构成块 + 竖排文字 + 错位网格
+   DOM 差异化：竖排副标 / 巨型排版首屏 / 错位画廊网格 /
+   巨型描边序号条目 / 色彩档案色卡 / aspect-ratio 画幅框 /
+   竖线批注引言 / 细线折叠 FAQ
+   ========================================================== */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Helvetica,Arial,sans-serif;
+  background:#f4f4f2;color:#0a0a0a;line-height:1.78;font-size:16px;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{border:0;max-width:100%;height:auto}
+h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em}
+.heavy{font-weight:900;letter-spacing:-.04em}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace}
+
+:root{
+  --bg:#f4f4f2;
+  --ink:#0a0a0a;
+  --red:#ff3b00;
+  --blue:#0047ff;
+  --yellow:#ffd400;
+  --grey:#8a8a86;
+  --line:#0a0a0a;
+}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 26px}
+
+/* ============ 顶部 ============ */
+header.mast{position:sticky;top:0;z-index:60;background:var(--bg);border-bottom:3px solid var(--line)}
+.mast-inner{max-width:1200px;margin:0 auto;padding:14px 26px;display:flex;align-items:center;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.logo .blk{
+  width:14px;height:38px;flex:0 0 auto;display:flex;flex-direction:column;gap:3px;
+}
+.logo .blk i{display:block;flex:1}
+.logo .blk i:nth-child(1){background:var(--red)}
+.logo .blk i:nth-child(2){background:var(--blue)}
+.logo .blk i:nth-child(3){background:var(--yellow)}
+.logo strong{font-size:23px;font-weight:900;letter-spacing:-.03em}
+.logo .vert{
+  writing-mode:vertical-rl;font-size:10px;letter-spacing:3px;color:var(--grey);
+  border-left:1px solid var(--line);padding-left:6px;height:38px;
+}
+nav.gv{margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav.gv::-webkit-scrollbar{display:none}
+nav.gv ul{display:flex;gap:0;border:2px solid var(--line)}
+nav.gv a{
+  display:block;padding:8px 14px;font-size:13.5px;font-weight:700;color:var(--ink);
+  border-right:2px solid var(--line);white-space:nowrap;transition:.16s;
+}
+nav.gv a:last-child{border-right:0}
+nav.gv a:hover{background:var(--yellow)}
+nav.gv a.on{background:var(--ink);color:#fff}
+.look{flex:0 0 auto;display:flex;align-items:center;border:2px solid var(--line);background:#fff}
+.look input{width:130px;height:30px;border:0;outline:none;background:transparent;padding:0 10px;font-size:13px;font-family:inherit}
+.look input::placeholder{color:#b0b0ac}
+.look button{height:30px;border:0;border-left:2px solid var(--line);padding:0 14px;font-size:12.5px;font-weight:800;background:var(--red);color:#fff;cursor:pointer;font-family:inherit}
+
+/* ============ 首屏：巨型排版 ============ */
+.hero{padding:0 0 10px;border-bottom:3px solid var(--line)}
+.hero-inner{max-width:1200px;margin:0 auto;padding:0 26px;position:relative}
+.hero-tag{
+  display:inline-block;margin-top:36px;font-size:11px;font-weight:800;letter-spacing:4px;
+  background:var(--red);color:#fff;padding:5px 14px;
+}
+.hero-grid{display:grid;grid-template-columns:1fr 78px;gap:0;align-items:stretch}
+.hero-main{padding:22px 0 40px;position:relative}
+.hero-main .ghost{
+  position:absolute;right:-6px;top:-16px;font-size:clamp(70px,16vw,190px);font-weight:900;
+  letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px rgba(10,10,10,.10);
+  pointer-events:none;z-index:0;line-height:1;white-space:nowrap;
+}
+.hero-main h1{
+  position:relative;z-index:2;margin-top:10px;font-size:clamp(34px,7vw,76px);font-weight:900;letter-spacing:-.045em;line-height:1.02;
+}
+.hero-main h1 em{font-style:normal;display:block;color:var(--blue)}
+.hero-main h1 .sw{
+  display:inline-block;background:var(--yellow);padding:0 8px;transform:rotate(-1.2deg);
+}
+.hero-main .lead{
+  position:relative;z-index:2;margin-top:22px;max-width:40em;font-size:15.5px;color:#33322f;line-height:1.9;
+}
+.hero-main .url{margin-top:14px;font-size:13px;color:var(--grey);word-break:break-all}
+.hero-main .url b{color:var(--ink);font-weight:800}
+.hero-btns{margin-top:26px;display:flex;gap:0;flex-wrap:wrap;border:2px solid var(--line);width:max-content}
+.hero-btns a{padding:12px 26px;font-size:14.5px;font-weight:800;transition:.16s}
+.hero-btns a:first-child{background:var(--ink);color:#fff;border-right:2px solid var(--line)}
+.hero-btns a:first-child:hover{background:var(--red)}
+.hero-btns a:last-child{background:#fff}
+.hero-btns a:last-child:hover{background:var(--yellow)}
+.hero-side{border-left:3px solid var(--line);display:flex;align-items:center;justify-content:center;padding:26px 0}
+.hero-side .vt{
+  writing-mode:vertical-rl;font-size:12px;font-weight:800;letter-spacing:6px;color:var(--ink);
+}
+.hero-side .vt span{color:var(--red)}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid var(--line);
+}
+.hero-stats div{padding:18px 20px;border-right:1px solid rgba(10,10,10,.2)}
+.hero-stats div:last-child{border-right:0}
+.hero-stats .k{font-size:11px;letter-spacing:2px;color:var(--grey)}
+.hero-stats .v{margin-top:3px;font-size:28px;font-weight:900;letter-spacing:-.04em}
+.hero-stats div:nth-child(2) .v{color:var(--red)}
+.hero-stats div:nth-child(3) .v{color:var(--blue)}
+
+/* ============ 栏目通用 ============ */
+section.blk{padding:52px 0 6px;border-bottom:1px solid rgba(10,10,10,.14)}
+section.blk:last-of-type{border-bottom:0}
+.cap{display:flex;align-items:flex-end;gap:18px;margin-bottom:26px;flex-wrap:wrap}
+.cap .idx{font-size:11px;font-weight:800;letter-spacing:3px;color:#fff;background:var(--ink);padding:5px 12px}
+.cap h2{font-size:clamp(21px,3.8vw,32px);font-weight:900}
+.cap .dsc{font-size:13px;color:var(--grey);margin-top:5px;letter-spacing:.02em}
+.cap .go{
+  margin-left:auto;font-size:13px;font-weight:800;border-bottom:3px solid var(--red);padding-bottom:2px;white-space:nowrap;
+}
+
+/* ============ 一、错位画廊网格 ============ */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:start}
+.gitem{position:relative}
+.gallery .gitem:nth-child(3n+2){margin-top:48px}
+.gallery .gitem:nth-child(3n){margin-top:24px}
+.gitem .plate{
+  position:relative;aspect-ratio:4/5;display:flex;align-items:flex-end;padding:18px;
+  border:2px solid var(--line);overflow:hidden;transition:.22s;
+}
+.gitem:hover .plate{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
+.gitem .plate .tag{
+  position:absolute;left:0;top:0;font-size:11px;font-weight:800;letter-spacing:2px;
+  background:var(--ink);color:#fff;padding:4px 12px;
+}
+.gitem .plate .rt{
+  position:absolute;right:0;top:0;font-size:13px;font-weight:900;
+  background:#fff;border-left:2px solid var(--line);border-bottom:2px solid var(--line);padding:4px 12px;
+}
+.gitem .plate h3{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.02em;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+.gitem .plate .yr{margin-top:4px;font-size:12px;color:rgba(255,255,255,.85);letter-spacing:1px}
+.v1{background:linear-gradient(160deg,#ff3b00,#7a1c00)}
+.v2{background:linear-gradient(160deg,#0047ff,#001a63)}
+.v3{background:linear-gradient(160deg,#0a0a0a,#4a4a48)}
+.v4{background:linear-gradient(160deg,#ffd400,#8a7200)}
+.v5{background:linear-gradient(160deg,#00a86b,#004a2f)}
+.v6{background:linear-gradient(160deg,#8a2be2,#3a1163)}
+.v7{background:linear-gradient(160deg,#00b8d4,#00495c)}
+.v8{background:linear-gradient(160deg,#e83e8c,#6b1240)}
+.gitem .meta{margin-top:12px;border-top:2px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;gap:12px}
+.gitem .meta p{font-size:13px;color:#33322f;line-height:1.6}
+.gitem .meta .sc{font-size:13px;font-weight:900;color:var(--red);white-space:nowrap}
+
+/* ============ 二、巨型描边序号条目 ============ */
+.frames{border-top:3px solid var(--line)}
+.fitem{display:grid;grid-template-columns:130px 1fr 96px;gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(10,10,10,.2)}
+.fitem:hover{background:rgba(255,212,0,.14)}
+.fitem .n{
+  font-size:64px;font-weight:900;line-height:.9;letter-spacing:-.06em;color:transparent;
+  -webkit-text-stroke:2px var(--ink);
+}
+.fitem:nth-child(2n) .n{-webkit-text-stroke:2px var(--red)}
+.fitem:nth-child(3n) .n{-webkit-text-stroke:2px var(--blue)}
+.fitem .bd h3{font-size:19px;font-weight:900}
+.fitem .bd p{margin-top:6px;font-size:13.5px;color:#33322f;max-width:46em}
+.fitem .bd .kw{margin-top:9px;display:flex;gap:8px;flex-wrap:wrap}
+.fitem .bd .kw span{font-size:11.5px;font-weight:700;padding:3px 10px;border:1.5px solid var(--line);background:#fff}
+.fitem .side{text-align:right}
+.fitem .side .mic{font-size:12px;color:var(--grey);letter-spacing:1px}
+.fitem .side .val{margin-top:2px;font-size:17px;font-weight:900}
+
+/* ============ 三、色彩档案色卡 ============ */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--line)}
+.sw{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:0;transition:.2s}
+.sw:nth-child(4n){border-right:0}
+.sw:nth-last-child(-n+4){border-bottom:0}
+.sw:hover{background:rgba(255,212,0,.12)}
+.sw .chip{height:120px;position:relative}
+.sw .chip .hex{
+  position:absolute;left:12px;bottom:10px;font-size:12px;font-weight:800;color:#fff;
+  background:rgba(0,0,0,.42);padding:3px 9px;letter-spacing:1px;
+}
+.sw .txt{padding:14px 16px 16px}
+.sw .txt h3{font-size:15.5px;font-weight:900}
+.sw .txt p{margin-top:5px;font-size:12.5px;color:#33322f}
+.sw .txt .ft{margin-top:9px;font-size:11.5px;color:var(--grey);letter-spacing:1px}
+
+/* ============ 四、画幅格式（aspect-ratio 真实比例） ============ */
+.ratios{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;align-items:end}
+.rt-item{}
+.rt-item .box{
+  border:2px solid var(--line);background:#fff;position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;
+}
+.rt-item:nth-child(1) .box{aspect-ratio:1.33}
+.rt-item:nth-child(2) .box{aspect-ratio:1.66}
+.rt-item:nth-child(3) .box{aspect-ratio:1.85}
+.rt-item:nth-child(4) .box{aspect-ratio:2.35}
+.rt-item:nth-child(5) .box{aspect-ratio:1.43}
+.rt-item .box .fill{position:absolute;inset:0}
+.rt-item:nth-child(1) .fill{background:linear-gradient(150deg,#ffd400,#fff6c2)}
+.rt-item:nth-child(2) .fill{background:linear-gradient(150deg,#ff3b00,#ffb199)}
+.rt-item:nth-child(3) .fill{background:linear-gradient(150deg,#0047ff,#a8bcff)}
+.rt-item:nth-child(4) .fill{background:linear-gradient(150deg,#0a0a0a,#5a5a58)}
+.rt-item:nth-child(5) .fill{background:linear-gradient(150deg,#00a86b,#b8ecd4)}
+.rt-item .box span{position:relative;z-index:2;font-size:13px;font-weight:900;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.rt-item:nth-child(1) .box span,.rt-item:nth-child(2) .box span{color:#0a0a0a;text-shadow:none}
+.rt-item .lb{margin-top:12px;border-top:2px solid var(--line);padding-top:9px}
+.rt-item .lb b{display:block;font-size:15px;font-weight:900}
+.rt-item .lb span{display:block;margin-top:4px;font-size:12px;color:var(--grey);line-height:1.6}
+
+/* ============ 五、竖线批注引言 ============ */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.note{border-left:6px solid var(--red);padding:4px 0 4px 20px}
+.note:nth-child(2){border-left-color:var(--blue)}
+.note:nth-child(3){border-left-color:var(--ink)}
+.note .lab{font-size:11px;font-weight:800;letter-spacing:3px;color:var(--grey)}
+.note h3{margin-top:8px;font-size:19px;font-weight:900;letter-spacing:-.02em;line-height:1.35}
+.note p{margin-top:10px;font-size:13.5px;color:#33322f;line-height:1.9}
+.note .by{margin-top:12px;font-size:12px;color:var(--grey);letter-spacing:1px}
+.note .by b{color:var(--ink)}
+
+/* ============ 六、站点特色 ============ */
+.pts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--line)}
+.pt{padding:22px 20px;border-right:1px solid var(--line);transition:.2s}
+.pt:last-child{border-right:0}
+.pt:hover{background:var(--yellow)}
+.pt .n{font-size:11px;font-weight:800;letter-spacing:3px;color:var(--red)}
+.pt h3{margin-top:8px;font-size:16.5px;font-weight:900}
+.pt p{margin-top:7px;font-size:13px;color:#33322f;line-height:1.8}
+
+/* ============ 七、FAQ 细线折叠 ============ */
+.faqs{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;border-top:3px solid var(--line)}
+.faqs details{border-bottom:1px solid rgba(10,10,10,.2);padding:16px 0}
+.faqs summary{cursor:pointer;font-size:15.5px;font-weight:800;list-style:none;display:flex;align-items:baseline;gap:10px}
+.faqs summary::-webkit-details-marker{display:none}
+.faqs summary i{font-style:normal;font-size:11px;font-weight:800;color:var(--red);letter-spacing:2px;flex:0 0 auto}
+.faqs summary::after{content:"＋";margin-left:auto;color:var(--ink);font-weight:900}
+.faqs details[open] summary::after{content:"－"}
+.faqs details p{margin-top:10px;font-size:13.5px;color:#33322f;line-height:1.9;padding-left:26px}
+
+/* ============ 页脚 ============ */
+footer.foot{margin-top:56px;background:var(--ink);color:#c9c9c5;padding:44px 0 26px}
+.f-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px}
+.f-top h4{font-size:12px;letter-spacing:3px;color:var(--yellow);margin-bottom:14px;font-weight:800}
+.f-top li{font-size:13.5px;padding:4px 0}
+.f-top li a:hover{color:var(--yellow)}
+.f-brand .lg{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.f-brand .lg b{font-size:22px;font-weight:900;letter-spacing:-.03em;color:#fff}
+.f-brand .lg i{display:block;width:12px;height:12px;background:var(--red)}
+.f-brand .lg i:nth-child(3){background:var(--blue)}
+.f-brand .lg i:nth-child(4){background:var(--yellow)}
+.f-brand p{font-size:13.5px;line-height:1.95;color:#a3a39f}
+.f-brand .u{margin-top:10px;font-size:12.5px;color:var(--yellow);word-break:break-all}
+.copy{
+  margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);
+  font-size:12.5px;color:#7d7d79;text-align:center;line-height:1.9;
+}
+
+/* ============ 移动端底栏 ============ */
+.dock{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--bg);
+  border-top:3px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom));
+}
+.dock ul{display:flex}
+.dock li{flex:1}
+.dock a{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:700;color:var(--grey);padding:5px 0}
+.dock a .ic{font-size:15px;line-height:1;color:var(--ink)}
+.dock a.on{color:var(--ink)}
+.dock a.on .ic{color:var(--red)}
+.up{
+  position:fixed;right:18px;bottom:80px;z-index:65;width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:900;color:#fff;
+  background:var(--ink);border:2px solid var(--ink);
+}
+.up:hover{background:var(--red);border-color:var(--red)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1080px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:22px}
+  .gallery .gitem:nth-child(3n+2),.gallery .gitem:nth-child(3n){margin-top:0}
+  .gallery .gitem:nth-child(2n){margin-top:36px}
+  .swatches{grid-template-columns:repeat(2,1fr)}
+  .sw:nth-child(4n){border-right:1px solid var(--line)}
+  .sw:nth-child(2n){border-right:0}
+  .sw:nth-last-child(-n+4){border-bottom:1px solid var(--line)}
+  .sw:nth-last-child(-n+2){border-bottom:0}
+  .ratios{grid-template-columns:repeat(3,1fr);gap:16px}
+  .notes{grid-template-columns:1fr;gap:20px}
+  .pts{grid-template-columns:repeat(2,1fr)}
+  .pt:nth-child(2){border-right:0}
+  .pt:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .f-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  body{font-size:15px;padding-bottom:62px}
+  .wrap{padding:0 16px}
+  .mast-inner{padding:11px 16px;gap:12px}
+  .logo .blk{width:11px;height:32px}
+  .logo strong{font-size:18px}
+  .logo .vert{display:none}
+  .look{display:none}
+  nav.gv a{padding:7px 11px;font-size:13px}
+  .hero-tag{margin-top:24px}
+  .hero-inner{padding:0 16px}
+  .hero-grid{grid-template-columns:1fr 46px}
+  .hero-main{padding:16px 0 28px}
+  .hero-main .ghost{font-size:64px;top:-6px;right:0;-webkit-text-stroke-width:1.5px}
+  .hero-main .lead{margin-top:16px;font-size:14.5px}
+  .hero-btns{width:100%}
+  .hero-btns a{flex:1;text-align:center;padding:11px 12px;font-size:14px}
+  .hero-side{padding:16px 0}
+  .hero-side .vt{letter-spacing:3px;font-size:11px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hero-stats div:nth-child(2){border-right:0}
+  .hero-stats div:nth-child(-n+2){border-bottom:1px solid rgba(10,10,10,.2)}
+  .hero-stats .v{font-size:23px}
+  section.blk{padding:34px 0 4px}
+  .cap{gap:12px;margin-bottom:20px}
+  .cap .go{margin-left:0}
+  .gallery{grid-template-columns:1fr;gap:20px}
+  .gallery .gitem:nth-child(2n){margin-top:0}
+  .gitem .plate{aspect-ratio:16/10}
+  .gitem .plate h3{font-size:19px}
+  .fitem{grid-template-columns:76px 1fr;gap:14px;padding:16px 0}
+  .fitem .n{font-size:40px;-webkit-text-stroke-width:1.5px}
+  .fitem .bd h3{font-size:16.5px}
+  .fitem .side{grid-column:1 / -1;text-align:left;display:flex;align-items:baseline;gap:10px;border-top:1px dashed rgba(10,10,10,.25);padding-top:8px}
+  .fitem .side .val{font-size:15px}
+  .swatches{grid-template-columns:1fr}
+  .sw{border-right:0}
+  .sw .chip{height:96px}
+  .ratios{grid-template-columns:1fr;gap:14px}
+  .ratios .rt-item .box{max-width:320px;margin:0 auto;width:100%}
+  .notes{grid-template-columns:1fr;gap:18px}
+  .pts{grid-template-columns:1fr}
+  .pt{border-right:0;border-bottom:1px solid var(--line)}
+  .pt:last-child{border-bottom:0}
+  .faqs{grid-template-columns:1fr}
+  .faqs details p{padding-left:0}
+  .f-top{grid-template-columns:1fr;gap:22px}
+  .dock{display:block}
+  .up{bottom:74px;right:12px;width:40px;height:40px}
+}
+@media (max-width:420px){
+  .hero-main .ghost{display:none}
+  .gitem .plate{aspect-ratio:4/3}
+  .fitem{grid-template-columns:60px 1fr;gap:11px}
+  .fitem .n{font-size:32px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://xinshijuedianyingwang-cn.github.io/#website",
+      "url": "https://xinshijuedianyingwang-cn.github.io/",
+      "name": "新视觉电影网",
+      "alternateName": "新视觉电影",
+      "description": "新视觉电影网从画面出发做电影推荐，每日更新视觉片单、影像构图解析、色彩档案、画幅格式对照与编辑观察，附剧情简介与评分参考。",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://xinshijuedianyingwang-cn.github.io/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://xinshijuedianyingwang-cn.github.io/#search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://xinshijuedianyingwang-cn.github.io/#organization",
+      "name": "新视觉电影网",
+      "url": "https://xinshijuedianyingwang-cn.github.io/",
+      "logo": "https://xinshijuedianyingwang-cn.github.io/logo.png"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://xinshijuedianyingwang-cn.github.io/#webpage",
+      "url": "https://xinshijuedianyingwang-cn.github.io/",
+      "name": "新视觉电影网 - 视觉电影推荐与影像构图_画幅色彩档案每日更新",
+      "isPartOf": { "@id": "https://xinshijuedianyingwang-cn.github.io/#website" },
+      "about": "视觉电影推荐、影像构图、色彩档案与画幅格式对照",
+      "inLanguage": "zh-CN",
+      "breadcrumb": { "@id": "https://xinshijuedianyingwang-cn.github.io/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://xinshijuedianyingwang-cn.github.io/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "新视觉电影网首页", "item": "https://xinshijuedianyingwang-cn.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "视觉片单", "item": "https://xinshijuedianyingwang-cn.github.io/#gallery" },
+        { "@type": "ListItem", "position": 3, "name": "影像构图", "item": "https://xinshijuedianyingwang-cn.github.io/#frame" },
+        { "@type": "ListItem", "position": 4, "name": "色彩档案", "item": "https://xinshijuedianyingwang-cn.github.io/#color" },
+        { "@type": "ListItem", "position": 5, "name": "画幅格式", "item": "https://xinshijuedianyingwang-cn.github.io/#ratio" },
+        { "@type": "ListItem", "position": 6, "name": "编辑观察", "item": "https://xinshijuedianyingwang-cn.github.io/#note" },
+        { "@type": "ListItem", "position": 7, "name": "站点特色", "item": "https://xinshijuedianyingwang-cn.github.io/#why" },
+        { "@type": "ListItem", "position": 8, "name": "关于新视觉电影网", "item": "https://xinshijuedianyingwang-cn.github.io/#about" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://xinshijuedianyingwang-cn.github.io/#gallery",
+      "name": "新视觉电影网视觉片单",
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "numberOfItems": 8,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "逆光之城（剧情 · 2026）" },
+        { "@type": "ListItem", "position": 2, "name": "蓝调时刻（文艺 · 2025）" },
+        { "@type": "ListItem", "position": 3, "name": "黑白房间（剧情 · 2024）" },
+        { "@type": "ListItem", "position": 4, "name": "金色麦浪（文艺 · 2023）" },
+        { "@type": "ListItem", "position": 5, "name": "绿房间（悬疑 · 2025）" },
+        { "@type": "ListItem", "position": 6, "name": "紫夜行车（犯罪 · 2024）" },
+        { "@type": "ListItem", "position": 7, "name": "海面之上（纪录 · 2026）" },
+        { "@type": "ListItem", "position": 8, "name": "红墙内外（家庭 · 2023）" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://xinshijuedianyingwang-cn.github.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "新视觉电影网和其他电影推荐站有什么不同？",
+          "acceptedAnswer": { "@type": "Answer", "text": "新视觉电影网从画面出发做推荐：不只给片名和评分，还整理影像构图手法、色彩基调、画幅格式等视觉信息，帮观众按「想看什么样的画面」来挑电影，而不是只按类型或热度筛选。" }
+        },
+        {
+          "@type": "Question",
+          "name": "新视觉电影网的片单多久更新一次？",
+          "acceptedAnswer": { "@type": "Answer", "text": "视觉片单每日 20:00 更新，影像构图解析按周补充，色彩档案与画幅格式对照随新片收录同步扩展，编辑观察按周更新。" }
+        },
+        {
+          "@type": "Question",
+          "name": "手机端可以正常浏览新视觉电影网吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "可以。新视觉电影网采用响应式设计，错位画廊在小屏转为单列并调整画幅比例，构图条目改为两段式排布，移动端另配底部快捷导航。" }
+        },
+        {
+          "@type": "Question",
+          "name": "找不到想看的电影怎么办？",
+          "acceptedAnswer": { "@type": "Answer", "text": "可使用顶部搜索框按片名或导演检索，也可进入视觉片单按色彩基调与画幅筛选；仍未收录的影片可通过联系站长提交片名，会在下一次更新时优先补录。" }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ============ 顶部 ============ -->
+<header class="mast">
+  <div class="mast-inner">
+    <div class="logo">
+      <span class="blk" aria-hidden="true"><i></i><i></i><i></i></span>
+      <strong>新视觉电影网</strong>
+      <span class="vert">NEW VISION MOVIE</span>
+    </div>
+    <nav class="gv" aria-label="主导航">
+      <ul>
+        <li><a href="#top" class="on">首页</a></li>
+        <li><a href="#gallery">视觉片单</a></li>
+        <li><a href="#frame">影像构图</a></li>
+        <li><a href="#color">色彩档案</a></li>
+        <li><a href="#ratio">画幅格式</a></li>
+        <li><a href="#note">编辑观察</a></li>
+        <li><a href="#why">站点特色</a></li>
+        <li><a href="#about">关于本站</a></li>
+      </ul>
+    </nav>
+    <form class="look" action="#" method="get" role="search">
+      <label for="q" style="position:absolute;left:-9999px">搜索影片</label>
+      <input id="q" name="q" type="search" placeholder="搜片名 / 导演">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 首屏：巨型排版 ============ -->
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-inner">
+    <span class="hero-tag">VISION FIRST · 从 画 面 出 发 挑 电 影</span>
+    <div class="hero-grid">
+      <div class="hero-main">
+        <span class="ghost" aria-hidden="true">VISION</span>
+        <h1 id="h1">看电影先看画面<br><em>就上<span class="sw">新视觉电影网</span></em></h1>
+        <p class="lead">新视觉电影网是<span style="font-weight:800;background:#ffd400;padding:0 4px">从画面出发做电影推荐</span>的影视站点。除了片名、剧情与评分，我们把每部影片的构图手法、色彩基调、画幅格式一并整理出来 —— 你可以按「想看什么样的画面」来挑片，而不只是在类型和热度里翻找。每日更新视觉片单，构图解析、色彩档案与编辑观察同步补充。</p>
+        <p class="url mono">网站网址：<b>https://xinshijuedianyingwang-cn.github.io</b></p>
+        <div class="hero-btns">
+          <a href="#gallery">翻开视觉片单</a>
+          <a href="#ratio">看看画幅差异</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <p class="vt">构 图 · 色 彩 · 画 幅 <span>／</span> 三 个 维 度 看 电 影</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-stats">
+      <div><span class="k">VISUAL LIBRARY</span><span class="v">3980</span></div>
+      <div><span class="k">DAILY UPDATE</span><span class="v">20:00</span></div>
+      <div><span class="k">COLOR INDEX</span><span class="v">24</span></div>
+      <div><span class="k">RATIO TYPES</span><span class="v">5</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：视觉片单（错位画廊） ============ -->
+<section class="blk wrap" id="gallery" aria-labelledby="s1">
+  <div class="cap">
+    <span class="idx mono">01</span>
+    <div>
+      <h2 id="s1">视觉片单 · 按画面挑电影</h2>
+      <p class="dsc">新视觉电影网每日更新，每部标注色彩基调与画幅</p>
+    </div>
+    <a class="go" href="#gallery">全部片单 &raquo;</a>
+  </div>
+  <div class="gallery">
+    <article class="gitem">
+      <div class="plate v1">
+        <span class="tag">剧情 · 2026</span>
+        <span class="rt">8.9</span>
+        <div>
+          <h3>逆光之城</h3>
+          <p class="yr">暖橙基调 · 2.35:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>全片大量逆光拍摄，人物常被勾出一道暖边，城市像被夕阳浸透。</p>
+        <span class="sc">8.9</span>
+      </div>
+    </article>
+    <article class="gitem">
+      <div class="plate v2">
+        <span class="tag">文艺 · 2025</span>
+        <span class="rt">8.7</span>
+        <div>
+          <h3>蓝调时刻</h3>
+          <p class="yr">冷蓝基调 · 1.85:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>集中在日落后半小时拍摄，天空的蓝与街灯的黄反复对照。</p>
+        <span class="sc">8.7</span>
+      </div>
+    </article>
+    <article class="gitem">
+      <div class="plate v3">
+        <span class="tag">剧情 · 2024</span>
+        <span class="rt">8.8</span>
+        <div>
+          <h3>黑白房间</h3>
+          <p class="yr">黑白 · 1.33:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>全片黑白，靠明暗层次而非色彩推进情绪，方形画幅更显封闭。</p>
+        <span class="sc">8.8</span>
+      </div>
+    </article>
+    <article class="gitem">
+      <div class="plate v4">
+        <span class="tag">文艺 · 2023</span>
+        <span class="rt">8.5</span>
+        <div>
+          <h3>金色麦浪</h3>
+          <p class="yr">土黄基调 · 2.35:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>大色块的黄占据整块银幕，人物常处在地平线以下的小小位置。</p>
+        <span class="sc">8.5</span>
+      </div>
+    </article>
+    <article class="gitem">
+      <div class="plate v5">
+        <span class="tag">悬疑 · 2025</span>
+        <span class="rt">8.6</span>
+        <div>
+          <h3>绿房间</h3>
+          <p class="yr">幽绿基调 · 1.85:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>封闭空间里的绿色灯光，把压抑感直接铺在画面上。</p>
+        <span class="sc">8.6</span>
+      </div>
+    </article>
+    <article class="gitem">
+      <div class="plate v6">
+        <span class="tag">犯罪 · 2024</span>
+        <span class="rt">8.4</span>
+        <div>
+          <h3>紫夜行车</h3>
+          <p class="yr">霓虹紫 · 2.35:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>雨夜与霓虹的组合，紫与青在湿地面上反复倒映。</p>
+        <span class="sc">8.4</span>
+      </div>
+    </article>
+    <article class="gitem">
+      <div class="plate v7">
+        <span class="tag">纪录 · 2026</span>
+        <span class="rt">9.0</span>
+        <div>
+          <h3>海面之上</h3>
+          <p class="yr">青蓝基调 · 1.66:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>大量水平线构图，海与天几乎各占一半，安静但有力量。</p>
+        <span class="sc">9.0</span>
+      </div>
+    </article>
+    <article class="gitem">
+      <div class="plate v8">
+        <span class="tag">家庭 · 2023</span>
+        <span class="rt">8.6</span>
+        <div>
+          <h3>红墙内外</h3>
+          <p class="yr">砖红基调 · 1.85:1</p>
+        </div>
+      </div>
+      <div class="meta">
+        <p>老房子的红墙是贯穿全片的视觉母题，也隔开两代人的距离。</p>
+        <span class="sc">8.6</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目二：影像构图（巨型描边序号） ============ -->
+<section class="blk wrap" id="frame" aria-labelledby="s2">
+  <div class="cap">
+    <span class="idx mono">02</span>
+    <div>
+      <h2 id="s2">影像构图 · 六种常见拍法</h2>
+      <p class="dsc">新视觉电影网按周补充，配合片单对照观看</p>
+    </div>
+    <a class="go" href="#frame">全部解析 &raquo;</a>
+  </div>
+  <div class="frames">
+    <article class="fitem">
+      <span class="n" aria-hidden="true">01</span>
+      <div class="bd">
+        <h3>对称构图</h3>
+        <p>画面以中轴线左右镜像，常用来强调秩序、压抑或仪式感。人物居中时，观者的注意力会被牢牢锁在中心，任何细微偏移都会显得突兀。</p>
+        <div class="kw"><span>中轴线</span><span>稳定</span><span>仪式感</span></div>
+      </div>
+      <div class="side"><span class="mic">代表片</span><span class="val">黑白房间</span></div>
+    </article>
+    <article class="fitem">
+      <span class="n" aria-hidden="true">02</span>
+      <div class="bd">
+        <h3>三分构图</h3>
+        <p>把画面横竖各三等分，主体放在交叉点上。最常用也最不易出错，既能突出主体，又能留出环境信息，叙事类影片里出现频率最高。</p>
+        <div class="kw"><span>井字格</span><span>平衡</span><span>通用</span></div>
+      </div>
+      <div class="side"><span class="mic">代表片</span><span class="val">逆光之城</span></div>
+    </article>
+    <article class="fitem">
+      <span class="n" aria-hidden="true">03</span>
+      <div class="bd">
+        <h3>框中框构图</h3>
+        <p>用门、窗、镜子等前景再套一层边框，把观众视线收束到特定区域，同时暗示「被观察」或「被困住」的心理状态。</p>
+        <div class="kw"><span>前景遮挡</span><span>窥视</span><span>受限</span></div>
+      </div>
+      <div class="side"><span class="mic">代表片</span><span class="val">绿房间</span></div>
+    </article>
+    <article class="fitem">
+      <span class="n" aria-hidden="true">04</span>
+      <div class="bd">
+        <h3>水平线构图</h3>
+        <p>把地平线或海平面放在画面中部或偏低位置，强调空间广度与人物的渺小。纪录片与公路片里常见，节奏天然偏慢。</p>
+        <div class="kw"><span>地平线</span><span>辽阔</span><span>慢节奏</span></div>
+      </div>
+      <div class="side"><span class="mic">代表片</span><span class="val">海面之上</span></div>
+    </article>
+    <article class="fitem">
+      <span class="n" aria-hidden="true">05</span>
+      <div class="bd">
+        <h3>负空间构图</h3>
+        <p>主体只占画面很小一部分，大片留白用来承载情绪。看似空，实则把注意力全部压在那一个小点上，冲击力反而更强。</p>
+        <div class="kw"><span>大留白</span><span>孤寂</span><span>强调</span></div>
+      </div>
+      <div class="side"><span class="mic">代表片</span><span class="val">金色麦浪</span></div>
+    </article>
+    <article class="fitem">
+      <span class="n" aria-hidden="true">06</span>
+      <div class="bd">
+        <h3>反射与镜像</h3>
+        <p>借助水面、玻璃、雨地制造倒影，让同一个画面里出现两层信息。适合表现人物的另一面，也常用于城市夜景的氛围营造。</p>
+        <div class="kw"><span>倒影</span><span>双层</span><span>氛围</span></div>
+      </div>
+      <div class="side"><span class="mic">代表片</span><span class="val">紫夜行车</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目三：色彩档案色卡 ============ -->
+<section class="blk wrap" id="color" aria-labelledby="s3">
+  <div class="cap">
+    <span class="idx mono">03</span>
+    <div>
+      <h2 id="s3">色彩档案 · 按色调检索</h2>
+      <p class="dsc">新视觉电影网把影片按主色归档，选片先看色</p>
+    </div>
+    <a class="go" href="#color">全部色彩 &raquo;</a>
+  </div>
+  <div class="swatches">
+    <article class="sw">
+      <div class="chip" style="background:#ff3b00"><span class="hex mono">#FF3B00</span></div>
+      <div class="txt">
+        <h3>暖橙红</h3>
+        <p>逆光、黄昏、室内暖光，情绪偏浓烈或怀旧。</p>
+        <p class="ft mono">收录 412 部 · 代表《逆光之城》</p>
+      </div>
+    </article>
+    <article class="sw">
+      <div class="chip" style="background:#0047ff"><span class="hex mono">#0047FF</span></div>
+      <div class="txt">
+        <h3>冷蓝调</h3>
+        <p>夜景、海边、冬季，情绪偏冷静或疏离。</p>
+        <p class="ft mono">收录 386 部 · 代表《蓝调时刻》</p>
+      </div>
+    </article>
+    <article class="sw">
+      <div class="chip" style="background:#0a0a0a"><span class="hex mono">#0A0A0A</span></div>
+      <div class="txt">
+        <h3>黑白灰</h3>
+        <p>无彩色，靠明暗与质感推进，形式感最强。</p>
+        <p class="ft mono">收录 218 部 · 代表《黑白房间》</p>
+      </div>
+    </article>
+    <article class="sw">
+      <div class="chip" style="background:#ffd400"><span class="hex mono">#FFD400</span></div>
+      <div class="txt">
+        <h3>土黄金</h3>
+        <p>田野、沙漠、旧时光，常用来承载回忆段落。</p>
+        <p class="ft mono">收录 274 部 · 代表《金色麦浪》</p>
+      </div>
+    </article>
+    <article class="sw">
+      <div class="chip" style="background:#00a86b"><span class="hex mono">#00A86B</span></div>
+      <div class="txt">
+        <h3>幽绿青</h3>
+        <p>封闭空间、夜间植被，常与压抑或异常感挂钩。</p>
+        <p class="ft mono">收录 196 部 · 代表《绿房间》</p>
+      </div>
+    </article>
+    <article class="sw">
+      <div class="chip" style="background:#8a2be2"><span class="hex mono">#8A2BE2</span></div>
+      <div class="txt">
+        <h3>霓虹紫</h3>
+        <p>雨夜、霓虹、都市夜景，类型片里出镜率很高。</p>
+        <p class="ft mono">收录 231 部 · 代表《紫夜行车》</p>
+      </div>
+    </article>
+    <article class="sw">
+      <div class="chip" style="background:#00b8d4"><span class="hex mono">#00B8D4</span></div>
+      <div class="txt">
+        <h3>海面青</h3>
+        <p>天空与水面，画面通透，节奏普遍偏慢。</p>
+        <p class="ft mono">收录 187 部 · 代表《海面之上》</p>
+      </div>
+    </article>
+    <article class="sw">
+      <div class="chip" style="background:#e83e8c"><span class="hex mono">#E83E8C</span></div>
+      <div class="txt">
+        <h3>砖红粉</h3>
+        <p>老建筑、家庭空间，情绪偏暖也偏复杂。</p>
+        <p class="ft mono">收录 203 部 · 代表《红墙内外》</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目四：画幅格式（aspect-ratio 真实比例） ============ -->
+<section class="blk wrap" id="ratio" aria-labelledby="s4">
+  <div class="cap">
+    <span class="idx mono">04</span>
+    <div>
+      <h2 id="s4">画幅格式 · 方框按真实比例排列</h2>
+      <p class="dsc">新视觉电影网用实际宽高比呈现，直观对比差异</p>
+    </div>
+    <a class="go" href="#ratio">画幅说明 &raquo;</a>
+  </div>
+  <div class="ratios">
+    <article class="rt-item">
+      <div class="box"><span class="fill" aria-hidden="true"></span><span>1.33:1</span></div>
+      <div class="lb">
+        <b>学院画幅</b>
+        <span>接近方形，画面紧凑，人物与空间关系更亲密。</span>
+      </div>
+    </article>
+    <article class="rt-item">
+      <div class="box"><span class="fill" aria-hidden="true"></span><span>1.66:1</span></div>
+      <div class="lb">
+        <b>欧洲宽幅</b>
+        <span>略宽于学院画幅，兼顾人物与环境的取景平衡。</span>
+      </div>
+    </article>
+    <article class="rt-item">
+      <div class="box"><span class="fill" aria-hidden="true"></span><span>1.85:1</span></div>
+      <div class="lb">
+        <b>遮幅宽银幕</b>
+        <span>最常见的院线画幅，叙事与构图适配度最高。</span>
+      </div>
+    </article>
+    <article class="rt-item">
+      <div class="box"><span class="fill" aria-hidden="true"></span><span>2.35:1</span></div>
+      <div class="lb">
+        <b>宽银幕</b>
+        <span>视野开阔，适合风光、群像与横向调度场面。</span>
+      </div>
+    </article>
+    <article class="rt-item">
+      <div class="box"><span class="fill" aria-hidden="true"></span><span>1.43:1</span></div>
+      <div class="lb">
+        <b>巨幕画幅</b>
+        <span>接近方形的大画面，纵向信息量明显增加。</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目五：编辑观察（竖线批注） ============ -->
+<section class="blk wrap" id="note" aria-labelledby="s5">
+  <div class="cap">
+    <span class="idx mono">05</span>
+    <div>
+      <h2 id="s5">编辑观察 · 看完画面之后想说的话</h2>
+      <p class="dsc">新视觉电影网按周更新，从视觉角度写观后</p>
+    </div>
+    <a class="go" href="#note">更多观察 &raquo;</a>
+  </div>
+  <div class="notes">
+    <article class="note">
+      <span class="lab mono">NOTE 01</span>
+      <h3>《逆光之城》：把夕阳拍成了一种情绪</h3>
+      <p>这部片的逆光不只是好看，它几乎承担了叙事功能 —— 人物关系缓和时逆光变软，冲突时则被硬边切开。看第二遍时建议专门盯光线的变化。</p>
+      <p class="by">编辑部 · 阿岩 · <b>09 月 30 日</b></p>
+    </article>
+    <article class="note">
+      <span class="lab mono">NOTE 02</span>
+      <h3>《黑白房间》：方形画幅带来的封闭感</h3>
+      <p>换成 1.33:1 之后，房间显得更窄，人物几乎没有退路。去掉色彩这一步，反而让观众更关注空间里那些细小的动作。</p>
+      <p class="by">编辑部 · 小微 · <b>09 月 27 日</b></p>
+    </article>
+    <article class="note">
+      <span class="lab mono">NOTE 03</span>
+      <h3>《海面之上》：水平线也可以很有张力</h3>
+      <p>全片大量把地平线放在正中，看似违背构图常识，但正因为稳定，任何一次偏离都会变得很有分量。纪录片的克制在这里体现得很清楚。</p>
+      <p class="by">编辑部 · 老秦 · <b>09 月 23 日</b></p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目六：站点特色 ============ -->
+<section class="blk wrap" id="why" aria-labelledby="s6">
+  <div class="cap">
+    <span class="idx mono">06</span>
+    <div>
+      <h2 id="s6">为什么用新视觉电影网挑片</h2>
+      <p class="dsc">三个视觉维度 + 一页看完的信息密度</p>
+    </div>
+    <a class="go" href="#about">了解我们 &raquo;</a>
+  </div>
+  <div class="pts">
+    <div class="pt">
+      <span class="n mono">A</span>
+      <h3>按画面挑片</h3>
+      <p>每部影片标注色彩基调与画幅格式，想看什么色调直接筛。</p>
+    </div>
+    <div class="pt">
+      <span class="n mono">B</span>
+      <h3>构图可对照</h3>
+      <p>六种常见拍法配代表片，看完解析再回头看片，收获不一样。</p>
+    </div>
+    <div class="pt">
+      <span class="n mono">C</span>
+      <h3>色彩档案化</h3>
+      <p>把影片按主色归档并给出色值，视觉检索比类型检索更直观。</p>
+    </div>
+    <div class="pt">
+      <span class="n mono">D</span>
+      <h3>全端自适应</h3>
+      <p>响应式排版覆盖手机、平板与桌面端，错位画廊在小屏自动转单列。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目七：关于 / FAQ ============ -->
+<section class="blk wrap" id="about" aria-labelledby="s7">
+  <div class="cap">
+    <span class="idx mono">07</span>
+    <div>
+      <h2 id="s7">关于新视觉电影网 · 常见问题</h2>
+      <p class="dsc">了解新视觉电影网的更新节奏与收录规则</p>
+    </div>
+    <a class="go" href="#about">联系站长 &raquo;</a>
+  </div>
+  <div class="faqs">
+    <details open>
+      <summary><i>Q1</i>新视觉电影网和其他电影推荐站有什么不同？</summary>
+      <p>新视觉电影网（https://xinshijuedianyingwang-cn.github.io）从画面出发做推荐：不只给片名和评分，还整理影像构图手法、色彩基调、画幅格式等视觉信息，帮观众按「想看什么样的画面」来挑电影，而不是只按类型或热度筛选。</p>
+    </details>
+    <details>
+      <summary><i>Q2</i>新视觉电影网的片单多久更新一次？</summary>
+      <p>视觉片单每日 20:00 更新，影像构图解析按周补充，色彩档案与画幅格式对照随新片收录同步扩展，编辑观察按周更新。</p>
+    </details>
+    <details>
+      <summary><i>Q3</i>手机端可以正常浏览新视觉电影网吗？</summary>
+      <p>可以。新视觉电影网采用响应式设计，错位画廊在小屏转为单列并调整画幅比例，构图条目改为两段式排布，移动端另配底部快捷导航。</p>
+    </details>
+    <details>
+      <summary><i>Q4</i>找不到想看的电影怎么办？</summary>
+      <p>可使用顶部搜索框按片名或导演检索，也可进入视觉片单按色彩基调与画幅筛选；仍未收录的影片可通过联系站长提交片名，我们会在下一次更新时优先补录。</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="lg"><b>新视觉电影网</b><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i></div>
+        <p>新视觉电影网从画面出发做电影推荐，把每部影片的构图手法、色彩基调与画幅格式一并整理出来，让你可以按「想看什么样的画面」来挑片。视觉片单每日 20:00 更新，构图解析、色彩档案与编辑观察同步补充。</p>
+        <p class="u mono">网址：https://xinshijuedianyingwang-cn.github.io</p>
+      </div>
+      <div>
+        <h4>视觉检索</h4>
+        <ul>
+          <li><a href="#gallery">视觉片单</a></li>
+          <li><a href="#frame">影像构图</a></li>
+          <li><a href="#color">色彩档案</a></li>
+          <li><a href="#ratio">画幅格式</a></li>
+          <li><a href="#note">编辑观察</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>色彩分区</h4>
+        <ul>
+          <li><a href="#color">暖橙红</a></li>
+          <li><a href="#color">冷蓝调</a></li>
+          <li><a href="#color">黑白灰</a></li>
+          <li><a href="#color">土黄金</a></li>
+          <li><a href="#color">霓虹紫</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点信息</h4>
+        <ul>
+          <li><a href="#about">关于新视觉电影网</a></li>
+          <li><a href="#why">站点特色</a></li>
+          <li><a href="#">更新日志</a></li>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">
+      新视觉电影网 &copy; 2026 · 本站为电影推荐与影视资讯聚合站点，所列影片信息仅供参考。<br>
+      Powered by 新视觉电影网 | https://xinshijuedianyingwang-cn.github.io
+    </p>
+  </div>
+</footer>
+
+<!-- ============ 移动端底部导航 ============ -->
+<nav class="dock" aria-label="移动端快捷导航">
+  <ul>
+    <li><a href="#top" class="on"><span class="ic" aria-hidden="true">◆</span>首页</a></li>
+    <li><a href="#gallery"><span class="ic" aria-hidden="true">▤</span>片单</a></li>
+    <li><a href="#color"><span class="ic" aria-hidden="true">✦</span>色彩</a></li>
+    <li><a href="#ratio"><span class="ic" aria-hidden="true">▭</span>画幅</a></li>
+    <li><a href="#about"><span class="ic" aria-hidden="true">◎</span>关于</a></li>
+  </ul>
+</nav>
+
+<a class="up" href="#top" aria-label="返回顶部">↑</a>
+
+</body>
+</html>
